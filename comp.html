@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <meta charset="UTF-8">
+    <title>完了</title>
+    <?!= HtmlService.createHtmlOutputFromFile('comp_css').getContent(); ?>
+  </head>
+  <body>
+    <center>
+      <h1>部長、副部長専用ページ</h1>
+      <form  method="post" action="https://script.google.com/macros/s/AKfycbyooAUonJGn3u4Xkz7_kmH4BO4UFvihrxvVFqTXcyEcCxUddEet/exec">
+        <br>
+        <label for="number">学籍番号</label>
+        <br>
+        <br>
+        <input  id="number" type="text" name="number" placeholder="sxxxxxxx" required>
+        <br>
+        <br>
+        <br>
+        <div class="box"><input type="submit" name="submit" value="返却完了"></div>
+      </form>
+      <br>
+      <br>
+      <iframe style width="75%" height="600px" frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRtPg8bn_fw85SbudVrsRzedxFnEZWqj60DYxAImVKm-tF7Y6H-TdBmMP9yxdGkZSiFQAAdK1kGsj6J/pubhtml?widget=true&amp;headers=false"></iframe>
+      <br>
+      <br>
+      <iframe style width="75%" height="600px" frameborder="0" src="https://calendar.google.com/calendar/embed?src=ug50e7guqcnmpog1eest35dmk0%40group.calendar.google.com&ctz=Asia%2FTokyo" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </center>
+  </body>
+</html>

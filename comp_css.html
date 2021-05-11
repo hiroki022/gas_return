@@ -1,0 +1,113 @@
+<style>
+body {
+    font-family: "Sawarabi Gothic";
+    background-color: black;
+    color: white;
+}
+center {
+    text-align: center;
+}
+
+input[type="text"]
+{
+    width: 50vw;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    appearance: none;
+}
+
+ /* ここから下がボタンのCSS　*/
+ 
+input[type="submit"] {
+    position: relative;
+    display: inline-block;
+    padding: .9em 3.6em;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    transition: all .2s;
+    background-color: #333333;
+    color: #fff;
+    z-index: 3;
+    }
+.box {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    transition: all .2s;
+}
+.box::before,
+.box::after
+ {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    z-index: 2;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 2px solid transparent;
+}
+.box:hover {
+    color: #3be5ae;
+}
+.box:hover::before,
+.box:hover::after
+{
+    width: 100%;
+    height: 100%;
+}
+.box:hover::before {
+    border-top-color: #3be5ae;
+    border-right-color: #3be5ae;
+    transition: width .3s, height .3s .3s;
+}
+.box:hover::after {
+    border-bottom-color: #3be5ae;
+    border-left-color: #3be5ae;
+    transition: height .3s, width .3s .3s;
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+    padding: .9em 3.6em;
+    border: 2px solid #fff;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    transition: all .2s;
+  }
+  .button::before,
+  .button::after {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    z-index: 2;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 2px solid transparent;
+  }
+  .button:hover {
+    color: #3be5ae;
+  }
+  .button:hover::before,
+  .button:hover::after {
+    width: 100%;
+    height: 100%;
+  }
+  .button:hover::before {
+    border-top-color: #3be5ae;
+    border-right-color: #3be5ae;
+    transition: width .3s, height .3s .3s;
+  }
+  .button:hover::after {
+    border-bottom-color: #3be5ae;
+    border-left-color: #3be5ae;
+    transition: height .3s, width .3s .3s;
+  }
+</style>
